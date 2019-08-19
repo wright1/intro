@@ -1,5 +1,5 @@
 import styled, { css, createGlobalStyle } from "styled-components"
-import panel from "../../../public/images/selfImage.jpg"
+import panel from "../../images/selfImage.jpg"
 
 export const GlobalStyle = createGlobalStyle`
     body{
