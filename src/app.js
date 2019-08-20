@@ -24,7 +24,7 @@ export default class App extends React.Component{
     }
 
     render(){
-        const width = window.innerWidth < 380;
+        const width = window.innerWidth < 420;
 
         return(
             <>
