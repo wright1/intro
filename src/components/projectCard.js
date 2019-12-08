@@ -1,45 +1,39 @@
-import React from "react"
-import  styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
+import { P } from "./styling/styles";
 
-const ProjectDiv = styled.div`
-width: 30vw;
-height: 50vh;
-display: flex;
-background-image: url(${props=>props.img});
-background-repeat: no-repeat;
-background-size: cover;
-background-position: auto;
-flex-direction: column;
-color: #140036;
-`
-
+const Div = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 const Wrapper = styled.img`
-width: 27vw;
-height:20vh;
-display: flex;
-margin: 1em;
-border-radius: 5px;
-margin-left: 40vw;
-`
+  width: 30vw;
+  height: 20vh;
+  margin: 2vw;
+  margin-top: 8vh;
+  border: 0.5px solid #140036;
+  margin-left: 8rem;
+  @media (min-width: 1024px) {
+    width: 18vw;
+    height: 20vh;
+  }
+`;
+export const ProjectCard = ({ img, place, href }) => {
+  return (
+    <>
+      <Div>
+        <a href={place}>
+          <Wrapper src={img} alt="project screenshot" />
+        </a>
+        <Div>
+          <P>
+            Full project details&nbsp;<a href={href}>HERE</a>
+          </P>
+        </Div>
+      </Div>
+    </>
+  );
+};
 
-export const ProjectCard = ({img, place}) => {
-
-    return(
-
-
-
-        <a href={ place }><Wrapper src={ img } alt="project screenshot" /></a>
-        
-        // <ProjectDiv >
-            
-                
-        // <span>{ word }</span>
-        // <span><a>{ label }</a></span>
-        // </ProjectDiv>
-        
-        
-
-    )
-}
-
-export default ProjectCard
+export default ProjectCard;
