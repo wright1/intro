@@ -8,6 +8,7 @@ import food from "./images/food.png";
 import namegame from "./images/namegame.png";
 import search from "./images/search.png";
 import cake from "./images/cake.png";
+import spell from "./images/spellchecker.png";
 import { Title } from "./components/title";
 import { Blurb } from "./components/blurb";
 import { Name } from "./components/name";
@@ -64,6 +65,16 @@ export default class App extends React.Component {
             img={search}
             place="https://quizzical-williams-fb1c29.netlify.com/"
             href="https://github.com/wright1/resonate"
+          />
+          <ProjectCard
+          img={spell}
+          place="https://github.com/wright1/spellchecker2"
+          href="https://github.com/wright1/spellchecker2"
+          />
+          <ProjectCard
+          img={food}
+          place="https://trjfpapp.herokuapp.com/"
+          href="https://github.com/fac-15/the-real-junk-food-project"
           />
           <Top />
         </ProjSection>
