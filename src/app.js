@@ -6,7 +6,6 @@ import white from "./images/white.png";
 import blue from "./images/blue.png";
 import food from "./images/food.png";
 import namegame from "./images/namegame.png";
-import search from "./images/search.png";
 import cake from "./images/cake.png";
 import spell from "./images/spellchecker.png";
 import { Title } from "./components/title";
@@ -60,11 +59,6 @@ export default class App extends React.Component {
             img={cake}
             place="https://justdesserts.netlify.com/"
             href="https://github.com/wright1/cake"
-          />
-          <ProjectCard
-            img={search}
-            place="https://quizzical-williams-fb1c29.netlify.com/"
-            href="https://github.com/wright1/resonate"
           />
           <ProjectCard
           img={spell}
